@@ -1,4 +1,5 @@
 import React , { Component } from 'react';
+import './App.css';
 
 import CardList from './CardList';
 import { robots } from './robots (1)';
@@ -25,7 +26,7 @@ import SearchBox from './SearchBox';
                 }) 
             return (
                 <div className='tc'>
-                <h1>RoboFriends</h1>
+                <h1 className='f1'>RoboFriends</h1>
                 <SearchBox  searhChange={this.onSearhChange}/>
                 <CardList  robots={filteredRobots}/>
                 </div>
