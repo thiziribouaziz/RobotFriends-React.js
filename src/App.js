@@ -14,7 +14,7 @@ import SearchBox from './SearchBox';
             }
         }
 
-        onSearhChange = (event) => {
+        onSearchChange = (event) => {
 
              this.setState({ searchfield: event.target.value })
                   
@@ -27,7 +27,7 @@ import SearchBox from './SearchBox';
             return (
                 <div className='tc'>
                 <h1 className='f1'>RoboFriends</h1>
-                <SearchBox  searhChange={this.onSearhChange}/>
+                <SearchBox  searchChange={this.onSearchChange}/>
                 <CardList  robots={filteredRobots}/>
                 </div>
             );
